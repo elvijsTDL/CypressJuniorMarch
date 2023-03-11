@@ -23,4 +23,12 @@ export class LoginPage extends BasePage {
   static validateErrorMessage(message) {
     this.hasText(ERROR_MESSAGE, message);
   }
+
+  static closeErrorMessage() {
+    this.click(ERROR_CLOSE_BUTTON)
+  }
+
+  static validateNoErrorMessage() {
+    this.doesNotExist(ERROR_MESSAGE)
+  }
 }
