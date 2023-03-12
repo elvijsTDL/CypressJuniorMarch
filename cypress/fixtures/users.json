@@ -1,0 +1,19 @@
+{
+  "bob": {
+    "firstName": "Bob",
+    "lastName": "Tester",
+    "postalCode": "1337"
+  },
+  "userWithoutName": {
+    "lastName": "Alison",
+    "postalCode": "145345345337"
+  },
+  "userWithoutLastName": {
+    "firstName": "Dan",
+    "postalCode": "21341234"
+  },
+  "userWithoutPostCode": {
+    "firstName": "John",
+    "lastName": "Bears"
+  }
+}

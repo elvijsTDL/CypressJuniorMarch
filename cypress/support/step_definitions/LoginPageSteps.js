@@ -21,8 +21,8 @@ Then(/^Error message saying "([^"]*)" is shown$/, function (message) {
   LoginPage.validateErrorMessage(message);
 });
 Given(/^User closes the error message$/, function () {
-  LoginPage.closeErrorMessage()
+  LoginPage.closeErrorMessage();
 });
 Then(/^The error message does not exist$/, function () {
-  LoginPage.validateNoErrorMessage()
+  LoginPage.validateNoErrorMessage();
 });

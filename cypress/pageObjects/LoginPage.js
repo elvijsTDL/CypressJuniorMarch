@@ -25,10 +25,10 @@ export class LoginPage extends BasePage {
   }
 
   static closeErrorMessage() {
-    this.click(ERROR_CLOSE_BUTTON)
+    this.click(ERROR_CLOSE_BUTTON);
   }
 
   static validateNoErrorMessage() {
-    this.doesNotExist(ERROR_MESSAGE)
+    this.doesNotExist(ERROR_MESSAGE);
   }
 }

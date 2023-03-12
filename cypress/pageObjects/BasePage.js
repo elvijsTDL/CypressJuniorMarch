@@ -8,7 +8,7 @@ export class BasePage {
   }
 
   static clickAll(selector) {
-    cy.get(selector).click({multiple:true});
+    cy.get(selector).click({ multiple: true });
   }
 
   static type(selector, text) {
