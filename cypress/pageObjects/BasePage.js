@@ -3,6 +3,14 @@ export class BasePage {
     cy.get(selector).click();
   }
 
+  static clickFirst(selector) {
+    cy.get(selector).first().click();
+  }
+
+  static clickAll(selector) {
+    cy.get(selector).click({multiple:true});
+  }
+
   static type(selector, text) {
     cy.get(selector).type(text);
   }

@@ -2,7 +2,6 @@ Feature: Login page test cases
   Background:
     Given The login page is open
 
-
   Scenario:Logging in with a standard user
     And User inputs "standard_user" and "secret_sauce" into the login fields
     And User click on the login button
