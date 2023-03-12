@@ -22,3 +22,18 @@ Given(/^The shopping cart badge is "([^"]*)"$/, function (amount) {
 Given(/^The "([^"]*)" has logged in "([^"]*)" page$/, function (user,page) {
   ProductsPage.logInUserWithoutUI(user,page)
 });
+Given(/^The cart has some items in it$/, function () {
+  ProductsPage.addItemsToCartBeforeTest()
+});
+Given(/^User removes all of the items that are in the cart$/, function () {
+  ProductsPage.removeAllItemsFromCart()
+});
+Then(/^No items in the cart are visible$/, function () {
+  ProductsPage.validateNoItemsAreVisible()
+});
+Given(/^User sorts the products by "([^"]*)"$/, function (option) {
+  ProductsPage.sortProductsBy(option)
+});
+Then(/^Products shown are sorted by High to Low$/, function () {
+  ProductsPage.validateProductsAreSortedByHighToLow()
+});
